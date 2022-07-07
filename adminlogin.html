@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./CSS/main1.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login</title>
+    
+  </head>
+
+  <body>
+    <div id="container">
+      <nav>
+        <div id="logo">Employee Management System</div>
+        <ul>
+          <li>
+            <a href="./adminlogin.html">Admin Login</a>
+          </li>
+          <li>
+            <a href="./emplogin.html">Employee Login</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <input type="checkbox" id="chk" aria-hidden="true" />
+      <div class="signup">
+        <form action="./process/aprocess.php" method="POST">
+          <label>Admin Login</label>
+
+          <label for="aemail"></label>
+          <input type="text" placeholder="Email" name="aemail" />
+          <label for="apassword"></label>
+          <input type="password" placeholder="Password" name="apassword" />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
